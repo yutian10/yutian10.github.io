@@ -1,6 +1,6 @@
 <!-- each category page -->
-<!-- {% if page.type %}
-<div class="archive">
+{% if page.type %}
+<!-- <div class="archive">
   <p class="archive_type">{{ page.type }}</p>
   <ul>
     {% for post in site.categories[page.type] %}
@@ -12,6 +12,7 @@
         <div class='archive_title'>
           <a href='{{ post.url | relative_url }}'>
             {{ post.title | escape }}
+          
           </a>
         </div>
       </li>
@@ -28,6 +29,18 @@
 <!-- main page -->
 {% else %}
 <div class="archive">
+  <p class="archive_title">
+    Biography
+  </p>
+  <p class="archive_text">
+    I am a third-year undergraduate (Sep. 2020 - ) student 
+  of College of Control Science and Engineering and Chu 
+  Kochen Honor College at <a href="https://www.zju.edu.cn/">Zhejiang University</a> .
+  I am currently majoring in Robotics Engineering, advised by Prof. 
+  <a href="https://ywang-zju.github.io/">Yue Wang</a>.
+  
+  </p>
+<!--   
   {% for post in site.posts %}
   {% unless post.next %}
   <p class="archive_year">{{ post.date | date: '%Y' }}</p>
@@ -43,6 +56,7 @@
     <li>
       <time class='archive_date' datetime='{{ post.date | date_to_xmlschema }}'>
         {{ post.date | date: "%b %d" }}
+        sssss
       </time>
       <div class='archive_title'>
         <a href='{{ post.url | relative_url }}'>
@@ -51,6 +65,6 @@
       </div>
     </li>
   </ul>
-  {% endfor %}
+  {% endfor %} -->
 </div>
 {% endif %}

@@ -15,10 +15,10 @@
     --header_bg: #fafafa;
     --content_bg: #fff;
     --archive_font: #000;
-    --archive_title: #46a891;
-    --archive_title_hover: #87CDBD;
-    --name_font: #003845;
-    --job_font: #003845;
+    --archive_title: #1d3d7b;
+    --archive_title_hover: #2a54a9;
+    --name_font: #000;
+    --job_font: #000;
     --info_font: #454a4c;
     --nav_font: #8d7edc;
     --nav_font_hover: #D4CEF2;
@@ -44,7 +44,7 @@
     --archive_font: #CACCCE;
     --archive_title: #46a891;
     --archive_title_hover: #87CDBD;
-    --name_font: #FFAA00;
+    --name_font: #CACCCE;
     --job_font: #CACCCE;
     --nav_font: #8d7edc;
     --nav_font_hover: #D4CEF2;
@@ -243,7 +243,7 @@ img {
     }
 
     @include breakpoint(medium) {
-        max-width: 30rem;
+        max-width: 45rem;
         margin-top: 5rem;
     }
 
@@ -254,6 +254,21 @@ img {
     }
 }
 
+.archive_text {
+    font-size: 1.5rem;
+    // margin-top: 1.4rem;
+    margin-bottom: 0.6rem;
+    line-height: 150%;
+}
+
+.archive_title {
+    font-size:2rem;
+    font-weight: bold;
+    // margin-top: 1.4rem;
+    margin-bottom: 0.6rem;
+    line-height: 150%;
+}
+
 .archive_date {
     text-transform: uppercase;
 
@@ -262,12 +277,12 @@ img {
     }
 }
 
-.archive_title {
-    word-wrap: normal;
-    @include breakpoint(medium) {
-        max-width: 80%;
-    }
-}
+// .archive_title {
+//     word-wrap: normal;
+//     @include breakpoint(medium) {
+//         max-width: 80%;
+//     }
+// }
 
 .archive_type {
     font-size: 2rem;
@@ -332,10 +347,10 @@ img {
         @extend .header_circle;
     }
 
-    &:hover {
-        cursor: pointer;
-        animation: jiggle 2s ease-in-out infinite;
-    }
+    // &:hover {
+    //     cursor: pointer;
+    //     // animation: jiggle 2s ease-in-out infinite;
+    // }
 
     @include mobile-only {
         bottom: 0;
