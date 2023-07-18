@@ -15,8 +15,8 @@
     --header_bg: #fafafa;
     --content_bg: #fff;
     --archive_font: #000;
-    --archive_title: #1d3d7b;
-    --archive_title_hover: #2a54a9;
+    --archive_title: #1652a6;
+    --archive_title_hover: #1652a6;
     --name_font: #000;
     --job_font: #000;
     --info_font: #454a4c;
@@ -112,7 +112,8 @@ body {
     height: 100%;
     font-weight: normal;
     font-style: normal;
-    font-family: -apple-system, BlinkMacSystemFont, 'Titillium Web', "Segoe UI", Roboto, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: sans-serif;
+    // font-family: -apple-system, BlinkMacSystemFont, 'Titillium Web', "Segoe UI", Roboto, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     margin: 0;
     padding: 0;
     background-color: var(--bg_color);
@@ -182,9 +183,9 @@ img {
     }
 
     @include mobile-only {
-        // margin-top: 2rem;
-        // margin-left: 1rem;
-        // margin-right: 1rem;
+        margin-top: 2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
 
     
@@ -218,6 +219,13 @@ img {
 
 /* 2. Archive
    ========================================================================== */
+.changer{
+    @include breakpoint(medium) {
+        max-width: 50rem;
+        margin-top: 0rem;
+        margin-left: 46rem;
+    }
+}
 
 .archive {
     color: var(--archive_font);
@@ -255,7 +263,8 @@ img {
 }
 
 .archive_text {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: 50;
     // margin-top: 1.4rem;
     margin-bottom: 0.6rem;
     line-height: 150%;
@@ -263,7 +272,7 @@ img {
 
 .archive_title {
     font-size:2rem;
-    font-weight: bold;
+    font-weight: normal;
     // margin-top: 1.4rem;
     margin-bottom: 0.6rem;
     line-height: 150%;
@@ -286,7 +295,7 @@ img {
 
 .archive_type {
     font-size: 2rem;
-    font-weight: bold;
+    font-weight: 300;
     margin-bottom: 1rem;
 }
 
@@ -339,7 +348,7 @@ img {
 .header_circle {
     border: none;
     box-sizing: border-box;
-    height: 15rem;
+    height: 12rem;
     width: 12rem;
     border-radius: 50%;
 
@@ -363,6 +372,7 @@ img {
 .header_name {
     display: block;
     color: var(--name_font);
+    font-weight: normal;
     font-size: 2em;
     margin-top: 1rem;
 }
@@ -372,7 +382,7 @@ img {
     margin-top: .5rem;
     color: var(--job_font);
     font-size: 1em;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .header_info {
@@ -389,12 +399,12 @@ img {
         display: none;
 
         &+div {
-            background: url('../img/m.png') no-repeat center center;
+            background: url('../img/moon_sim.png') no-repeat center;
             width: 30px;
             height: 30px;
             border-radius: 50%;
             position: relative;
-            transition: box-shadow .5s ease 0s, transform .5s ease .1s;
+            // transition: box-shadow .5s ease 0s, transform .5s ease .1s;
 
             &:before {
                 
@@ -404,28 +414,29 @@ img {
                 position: absolute;
                 left: 0;
                 top: 0;
-                transition: background .5s ease;
+                // transition: background .5s ease;
             }
 
             &:after {
                 
-                background: url('../img/s.png') no-repeat center;
+                background: url('../img/sun_sim.png') no-repeat center;
                 border-radius: 50%;
                 content: '';
                 width: 30px;
                 height: 30px;
                 position: absolute;
-                transform: scale(0);
-                transition: all .5s ease;
+                transform: scale(0); //sun disappear
+                // transition: all .5s ease;
             }
         }
 
         &:checked+div {
-            transform: scale(.5);
-
+            transform: scale(0.01);
+            // opacity: 0%;
             &:after {
-                transform: scale(2);
-                transition: transform .5s ease .15s;
+                transform: scale(100);
+                // opacity: 100%;
+                // transition: transform .5s ease .15s;
             }
         }
     }
