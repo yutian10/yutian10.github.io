@@ -46,6 +46,7 @@
     --archive_title_hover: #87CDBD;
     --name_font: #CACCCE;
     --job_font: #CACCCE;
+    --info_font: #959697;
     --nav_font: #8d7edc;
     --nav_font_hover: #D4CEF2;
     --shadow_color: rgba(0, 0, 0, 1);
@@ -182,11 +183,11 @@ img {
     }
     }
 
-    @include mobile-only {
-        margin-top: 2rem;
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
+    // @include mobile-only {
+    //     margin-top: 2rem;
+    //     margin-left: 1rem;
+    //     margin-right: 1rem;
+    // }
 
     
 
@@ -221,9 +222,14 @@ img {
    ========================================================================== */
 .changer{
     @include breakpoint(medium) {
-        max-width: 50rem;
         margin-top: 0rem;
-        margin-left: 46rem;
+        margin-left: 45rem;
+        margin-right: 1.2rem;
+    }
+    @include mobile-only {
+        margin-top: 0rem;
+        margin-left: 15rem;
+        margin-right: 1.2rem;
     }
 }
 
@@ -256,7 +262,7 @@ img {
     }
 
     @include mobile-only {
-        margin-top: 2rem;
+        margin-top: 5.5rem;
         margin-left: 1.2rem;
         margin-right: 1.2rem;
     }
