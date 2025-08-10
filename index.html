@@ -41,7 +41,7 @@
                     The Chinese University of Hong Kong</br>
 				</p>
 				<p >
-					<a href="assets/CV_YutianChen2.pdf">CV</a> &nbsp;/&nbsp;
+					<a href="assets/CV_YutianChen3.pdf">CV</a> &nbsp;/&nbsp;
 					<a href="https://scholar.google.com/citations?hl=en&user=7jCxPCEAAAAJ">Scholar</a> &nbsp;/&nbsp;
 					<a href="https://github.com/yutian10/">Github</a>
 				  </p>
@@ -59,10 +59,55 @@
 
 <h2>Publications</h2>
 <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-<tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
+
+	<tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
+		<td style="padding:20px;width:20%;vertical-align:middle">
+			<div class="one">
+			  <div class="two" id='smerf_image'><video  width=100% muted autoplay loop>
+			  <source src="./assets/img/4DSloMo.mp4" type="video/mp4" style="box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.4);object-fit: cover; border-radius: 10px;">
+			  Your browser does not support the video tag.
+			  </video></div>
+			  <img src='./assets/img/4DSloMo.png' width=100% style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4);border-radius: 10px;">
+			</div>
+			<script type="text/javascript">
+			  function smerf_start() {
+				document.getElementById('smerf_image').style.opacity = "1";
+			  }
+	  
+			  function smerf_stop() {
+				document.getElementById('smerf_image').style.opacity = "0";
+			  }
+			  smerf_stop()
+			</script>
+		  </td>
+		<td style="padding:20px;width:20%;vertical-align:middle">
+			<span class="papertitle">4DSloMo: 4D Reconstruction for High Speed Scene with Asynchronous Capture</span>
+			<br>
+			<strong>Yutian Chen</strong>,
+			<a href="https://guoshi28.github.io">Shi Guo</a>,
+			<a href="https://tianshuoy.github.io">Tianshuo Yang</a>,
+			<a href="https://dinglihe.github.io">Lihe Ding</a>,
+			<a href="">Xiuyuan Yu</a>,
+			<a href="https://www.gujinwei.org/">Jinwei Gu</a>,
+			<a href="https://tianfan.info/">Tianfan Xue</a>
+			
+			<br>
+			ACM SIGGRAPH Asia, 2025
+			<br>
+			<a href="https://openimaginglab.github.io/4DSloMo/">Project page</a>
+			/
+			<a href="https://arxiv.org/pdf/2507.05163">Paper</a>
+			/
+			<a href="https://github.com/OpenImagingLab/4DSloMo">Code (Coming soon)</a>
+			<p></p>
+			<p>Our method can reconstruct high speed and complex 4D motion with high quality.</p>	
+		</td>
+		</tr>
+
+	<tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
 <td style="padding:20px;width:20%;vertical-align:middle">
 	<div class="one">
-	<img src='./assets/img/2024-EVSHDR.png' width=100% style="box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.4);object-fit: cover; border-radius: 10px;">
+	<img src='./assets/img/EVSHDR.png' width=100% style="box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.4);object-fit: cover; border-radius: 10px;">
 	</div>
 </td>
 <td style="padding:20px;width:20%;vertical-align:middle">
@@ -83,6 +128,7 @@
 	<a href="https://arxiv.org/abs/2412.14705">Paper</a>
 	/
 	<a href="https://github.com/OpenImagingLab/Event-Assisted-12stops-HDR">Code (Coming soon)</a>
+	<p></p>
 	<p>Using event camera, our method present the first attempt at 12-stop HDR imaging for dynamic scenes.</p>	
 </td>
 </tr>
