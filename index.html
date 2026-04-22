@@ -26,7 +26,7 @@
 
 <div id="layout-content" style="margin-top:25px">
 
-<img src="./assets/img/mypic.png" style="float:right; margin-top:30px; width: 20%;border-radius: 5px;" />
+<img src="./assets/img/mypic2.jpg" style="float:right; margin-top:30px; width: 20%;border-radius: 5px;" />
 <table>
 	<tbody>
 		<tr>
@@ -59,6 +59,118 @@
 
 <h2>Publications</h2>
 <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+	<tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
+		<td style="padding:20px;width:20%;vertical-align:middle">
+			<div class="one">
+			  <div class="two" id='smerf_image'><video  width=100% muted autoplay loop>
+			  <source src="./assets/img/AnyRecon.mp4" type="video/mp4" style="box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.4);object-fit: cover; border-radius: 10px;">
+			  Your browser does not support the video tag.
+			  </video></div>
+			  <img src='./assets/img/AnyRecon.png' width=100% style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4);border-radius: 10px;">
+			</div>
+			<script type="text/javascript">
+			  function smerf_start() {
+				document.getElementById('smerf_image').style.opacity = "1";
+			  }
+	  
+			  function smerf_stop() {
+				document.getElementById('smerf_image').style.opacity = "0";
+			  }
+			  smerf_stop()
+			</script>
+		  </td>
+		<td style="padding:20px;width:20%;vertical-align:middle">
+			<span class="papertitle">AnyRecon: Arbitrary-View 3D Reconstruction with Video Diffusion Model</span>
+			<br>
+			<strong>Yutian Chen</strong>,
+			<a href="https://guoshi28.github.io">Shi Guo</a>,
+			<a href="https://rbjin.github.io/">Renbiao Jin</a>,
+			<a href="https://tianshuoy.github.io">Tianshuo Yang</a>,
+			<a href="https://caixin98.github.io/">Xin Cai</a>,
+			<a href="https://luo0207.github.io/yawenluo/">Yawen Luo</a>,
+			<a href="">Mingxin Yang 3</a>,
+			<a href="https://mulinyu.github.io/">Mulin Yu</a>,
+			<a href="https://mulinyu.github.io/">Linning Xu</a>,
+			<a href="https://tianfan.info/">Tianfan Xue</a>
+			
+			<br>
+			<em>arXiv</em>, 2026
+			<br>
+			<a href="https://yutian10.github.io/AnyRecon/">Project page</a>
+			/
+			<a href="https://arxiv.org/pdf/2604.19747">Paper</a>
+			/
+			<a href="https://github.com/OpenImagingLab/AnyRecon">Code</a>
+			<p></p>
+			<p>AnyRecon enables high-quality and large-scale 3D reconstruction from sparse inputs.</p>	
+		</td>
+	</tr>
+
+	<tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
+		<td style="padding:20px;width:20%;vertical-align:middle">
+			<div class="one">
+			<img src='./assets/img/HiVLA.png' width=100% style="box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.4);object-fit: cover; border-radius: 10px;">
+			</div>
+		</td>
+		<td style="padding:20px;width:20%;vertical-align:middle">
+			<span class="papertitle">HiVLA: A Visual-Grounded-Centric Hierarchical Embodied Manipulation System</span>
+			<br>
+			<a href="https://scholar.google.com/citations?user=9b5dE40AAAAJ&hl=en">Tianshuo Yang</a>,
+			<a href="">Guanyu Chen</a>,
+			<strong>Yutian Chen</strong>,
+			<a href="https://liang-zx.github.io/">Zhixuan Liang</a>,
+			<a href=" ">Yitian Liu</a>,
+			<a href=" ">Zanxin Chen</a>,
+			<a href="https://scholar.google.com/citations?user=J0mUlCIAAAAJ&hl=en">Chunpu Xu</a>
+			<a href=" ">Haotian Liang</a>,
+			<a href="https://oceanpang.github.io">Jiangmiao Pang</a>,
+			<a href="https://yaomarkmu.github.io/">Yao Mu</a>,
+			<a href="https://scholar.google.com/citations?hl=en&user=aXdjxb4AAAAJ&view_op=list_works&sortby=pubdate">Ping Luo</a>,
+			<br>
+			<em>arXiv</em>, 2026
+			<br>
+			<a href="https://tianshuoy.github.io/HiVLA-page/">Project page</a>
+			/
+			<a href="https://arxiv.org/pdf/2604.14125">Paper</a>
+			/
+			<a href="https://tianshuoy.github.io/HiVLA-page/">Code</a>
+			<p></p>
+			<p>A visual-grounded-centric hierarchical framework that explicitly decouples high-level semantic planning from low-level motor control</p>	
+		</td>
+	</tr>
+
+	<tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
+		<td style="padding:20px;width:20%;vertical-align:middle">
+			<div class="one">
+			<img src='./assets/img/shotstream.png' width=100% style="box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.4);object-fit: cover; border-radius: 10px;">
+			</div>
+		</td>
+		<td style="padding:20px;width:20%;vertical-align:middle">
+			<span class="papertitle">ShotStream: Streaming Multi-Shot Video Generation for Interactive Storytelling</span>
+			<br>
+			<a href="https://luo0207.github.io/yawenluo/">Yawen Luo</a>,
+			<a href="https://xiaoyushi97.github.io">Xiaoyu Shi</a>,
+			<a href="https://zhuang2002.github.io/">Junhao Zhuang</a>,
+			<strong>Yutian Chen</strong>,
+			<a href="https://liuquande.github.io/">Quande Liu</a>,
+			<a href="https://xinntao.github.io/">Xintao Wang</a>,
+			<a href="https://scholar.google.com/citations?user=P6MraaYAAAAJ&hl=en">Pengfei Wan</a>,
+			<a href="https://tianfan.info/">Tianfan Xue</a>
+			<br>
+			<em>arXiv</em>, 2026
+			<br>
+			<a href="https://luo0207.github.io/ShotStream/">Project page</a>
+			/
+			<a href="https://arxiv.org/abs/2603.25746">Paper</a>
+			/
+			<a href="https://github.com/KlingAIResearch/ShotStream">Code</a>
+			<p></p>
+			<p>A novel causal multi-shot architecture that enables interactive storytelling and efficient on-the-fly frame generation, achieving 16 FPS on a single NVIDIA GPU.</p>	
+		</td>
+	</tr>
+
+
 
 	<tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
 		<td style="padding:20px;width:20%;vertical-align:middle">
